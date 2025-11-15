@@ -58,8 +58,9 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'studentperformancecheck'
-          resource-group: 'studentscore_group'
+          resource-group-name: studentscore_group
           slot-name: 'Production'
           images: 'testdockersathwii.azurecr.io/${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_E3D401F92BB3424FA5EC28DDCD5EFF9F }}/studentperformance:${{ github.sha }}'
 
           
+
